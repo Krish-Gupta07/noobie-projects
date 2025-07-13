@@ -1,0 +1,7 @@
+MailPulse/.venv
+MailPulse/.env
+NewsCLI/.venv
+NewsCLI/.env
+NewsCLI/__pycache__
+MailPulse/__pycache__
+

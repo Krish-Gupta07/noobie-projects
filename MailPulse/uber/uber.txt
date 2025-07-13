@@ -1,0 +1,1 @@
+[{"current_location": "Delhi", "destination": "Pune", "distance": 40, "vehicle": "Cab", "fare": 500.0}, {"current_location": "Darjeeling", "destination": "Kolkata", "distance": 40, "vehicle": "Bike", "fare": 300.0}, {"current_location": "delhi", "destination": "pune", "distance": 40, "vehicle": "bike", "fare": 300.0}]
