@@ -24,42 +24,10 @@ async def on_member_join(member, message):
     await member.send(f"Welcome to the server {member.name}")
     await message.channel.send(f"welcome jaanu {message.author.mention}")
 
-@bot.event
-async def on_message(message):
-    if message.author == bot.user:
-        return
-    
-    if "shit" in message.content.lower().strip():
-        await message.channel.send(f"chup hoja bhadwe {message.author.mention}")
-
-    await bot.process_commands(message)
 
 @bot.event 
 async def on_ready():
     print(f"ts pmo ngl, {bot.user.name}")
-
-@bot.command()
-async def hello(ctx):
-    await ctx.send(f"hello meri jaan {ctx.author.mention}")
-
-@bot.command()
-async def assign(ctx):
-    role = discord.utils.get(ctx.guild.roles, name=secret_role)
-    if role:
-        await ctx.author.add_roles(role)
-        await ctx.send(f"{ctx.author.mention} is now assigned {secret_role}")
-    else:
-        await ctx.send("Role doesn't exist")
-
-@bot.command()
-async def poll(ctx, *, question):
-    embed = discord.Embed(title='New Poll', description=question)
-    poll_message = await ctx.send(embed=embed)
-    await poll_message.add_reaction("😭")
-
-@bot.command()
-async def dm(ctx, *, msg):
-    await ctx.author.send(f"You said {msg}")
 
 
 @bot.command()

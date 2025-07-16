@@ -1,0 +1,4 @@
+GEMINI_API_KEY = Enter your Gemini key
+MAIL_PASSWORD = Enter your email password (Generate a new app password)
+MAIL_USERNAME = Enter your email ID
+DISCORD_TOKEN = Enter your discord bot token
